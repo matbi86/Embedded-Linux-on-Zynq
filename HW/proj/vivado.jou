@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Sat Aug 17 11:52:36 2024
+# Process ID: 8676
+# Current directory: C:/Users/kim/Documents/github/vivado/Zybo-Z7-OS/hardware/Zybo-Z7-HW/proj
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13092 C:\Users\kim\Documents\github\vivado\Zybo-Z7-OS\hardware\Zybo-Z7-HW\proj\Zybo-Z7-HW.xpr
+# Log file: C:/Users/kim/Documents/github/vivado/Zybo-Z7-OS/hardware/Zybo-Z7-HW/proj/vivado.log
+# Journal file: C:/Users/kim/Documents/github/vivado/Zybo-Z7-OS/hardware/Zybo-Z7-HW/proj\vivado.jou
+# Running On: DESKTOP-S4LJL03, OS: Windows, CPU Frequency: 2994 MHz, CPU Physical cores: 16, Host memory: 34288 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/kim/Documents/github/vivado/Zybo-Z7-OS/hardware/Zybo-Z7-HW/proj/Zybo-Z7-HW.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 16
+wait_on_run synth_1
+launch_runs impl_1 -jobs 16
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 16
+wait_on_run impl_1
+open_run impl_1

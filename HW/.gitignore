@@ -13,6 +13,9 @@
 !scripts/
 !hw_handoff/
 
+# vivado workspace
+
+
 # ip repository
 repo/**
 !repo/vivado-library
